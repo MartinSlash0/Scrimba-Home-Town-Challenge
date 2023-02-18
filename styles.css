@@ -1,0 +1,147 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: rgb(220, 220, 220);
+}
+
+body {
+    margin: 0 0;
+    padding: 0;
+}
+
+#hero {
+    width: auto;
+    height: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/balchik-background.jpg");
+    background-size: cover;
+
+}
+
+#hero h2 {
+    color: coral;
+    background-color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#hero h4 {
+    color: chocolate;
+    background-color: antiquewhite;
+    padding: 5px 10px;
+    margin : 0px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#activities {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(rgb(199, 224, 199), rgb(241, 216, 168));
+    color: rgb(62, 157, 230);
+}
+
+.activity img {
+    height: 200px;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 20px;
+    box-shadow: 0px 2.5px 2.5px 0.35px black;
+}
+
+#guide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 216, 168);
+    padding: 50px 0px;
+}
+
+#guide-img {
+    width: 200px;
+    border: 3px solid antiquewhite;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(62, 157, 230);
+    padding: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0.25px black;
+    border-bottom: solid 8px skyblue;
+}
+
+.card-text {
+    margin: 0 15px;
+    color: antiquewhite;
+    text-shadow: 0.5px 1px black;
+}
+
+.card-text p {
+    font-style: italic;
+}
+
+@media (min-width: 1100px) {
+    body {
+        margin: 0 150px;
+    }
+
+    #hero {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        height: 700px;
+        box-shadow: 1px 5px 1px 0.15px black;
+    }
+
+    #activities-guide-container {
+        margin: 50px 0 0 0 ;
+        box-shadow: 0px -2px 2px 0.15px black;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        overflow: hidden;
+    }
+
+    #activities {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center; 
+    }
+
+    #activity-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .activity {
+        display: flex;
+        flex-direction: column;
+        margin: 0 55px;
+    }
+
+    .activity p {
+        width: 300px;
+    }
+
+    .activity img {
+        order: -1;
+        border-radius: 50%;
+        width: 225px;
+    }
+
+    .card {
+        margin: 150px 0 0 0;
+    }
+}

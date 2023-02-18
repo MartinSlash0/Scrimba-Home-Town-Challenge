@@ -64,7 +64,7 @@ body {
 }
 
 #guide-img {
-    width: 140px;
+    width: 120px;
     border: 3px solid antiquewhite;
     border-radius: 10px;
 }
@@ -74,13 +74,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     background-color: rgb(62, 157, 230);
     padding: 25px 25px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0.25px black;
     border-bottom: solid 8px skyblue;
+    font-size: 0.8rem;
 }
 
 .card-text {
@@ -143,16 +144,14 @@ body {
     }
 
     .card {
-        margin: 50px 0 0 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         height: 300px;
         width: 400px;
-        background-color: rgb(62, 157, 230);
-        padding: 25px 25px;
+        font-size: 1rem;
+    }
+
+    #guide-img {
+        width: 200px;
+        border: 3px solid antiquewhite;
         border-radius: 10px;
-        box-shadow: 0px 0px 5px 0.25px black;
-        border-bottom: solid 8px skyblue;
     }
 }
